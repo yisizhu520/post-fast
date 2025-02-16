@@ -609,8 +609,8 @@ importers:
         specifier: workspace:*
         version: link:../logs
       chargebee-typescript:
-        specifier: ^2.44.0
-        version: 2.44.0
+        specifier: ^2.45.0
+        version: 2.45.0
       stripe:
         specifier: ^17.5.0
         version: 17.5.0
@@ -3845,8 +3845,8 @@ packages:
   character-reference-invalid@2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
 
-  chargebee-typescript@2.44.0:
-    resolution: {integrity: sha512-wylczobhDMsmRQEmdYh/t5pT5dRvgnXJJ/tBou8P8Jx7TdHG01U0gFWxtSaA+l3kpmZaSxtFeMtL3kLy7+wg1Q==}
+  chargebee-typescript@2.45.0:
+    resolution: {integrity: sha512-9AY7fhnkFoNyT39x6JJzK9wWsxc9DjJ50O5iyCRR1ve9t4uNXMLMftTE1DzXopT884p1cvL5E/leVny/Bn5euQ==}
     engines: {node: '>=8.0.0'}
 
   check-more-types@2.24.0:
@@ -4923,6 +4923,7 @@ packages:
 
   lodash.template@4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
+    deprecated: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
 
   lodash.templatesettings@4.2.0:
     resolution: {integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==}
@@ -5430,6 +5431,7 @@ packages:
 
   oslo@1.2.1:
     resolution: {integrity: sha512-HfIhB5ruTdQv0XX2XlncWQiJ5SIHZ7NHZhVyHth0CSZ/xzge00etRyYy/3wp/Dsu+PkxMC+6+B2lS/GcKoewkA==}
+    deprecated: Package is no longer supported. Please see https://oslojs.dev for the successor project.
 
   ospath@1.2.2:
     resolution: {integrity: sha512-o6E5qJV5zkAbIDNhGSIlyOhScKXgQrSRMilfph0clDfM0nEnBOlKlH4sWDmG95BW/CvwNz0vmm7dJVtU2KlMiA==}
@@ -10254,7 +10256,7 @@ snapshots:
 
   character-reference-invalid@2.0.1: {}
 
-  chargebee-typescript@2.44.0:
+  chargebee-typescript@2.45.0:
     dependencies:
       q: 1.5.1
 
