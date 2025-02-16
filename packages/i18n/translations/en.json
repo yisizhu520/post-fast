@@ -795,5 +795,10 @@
 			"url": "url",
 			"uuid": "uuid"
 		}
+	},
+	"marketing": {
+		"hero": {
+			"new": "New"
+		}
 	}
 }

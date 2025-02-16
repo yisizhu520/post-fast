@@ -795,5 +795,10 @@
 	},
 	"documentation": {
 		"title": "Dokumentation"
+	},
+	"marketing": {
+		"hero": {
+			"new": "New"
+		}
 	}
 }

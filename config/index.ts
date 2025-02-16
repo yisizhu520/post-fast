@@ -16,12 +16,17 @@ export const config = {
 				currency: "USD",
 				label: "Deutsch",
 			},
+			cn: {
+				currency: "CNY",
+				label: "中文",
+			},
 		},
 		// The default locale is used if no locale is provided
 		defaultLocale: "en",
 		// The default currency is used for pricing if no currency is provided
 		defaultCurrency: "USD",
 		// The name of the cookie that is used to determine the locale
+
 		localeCookieName: "NEXT_LOCALE",
 	},
 	// Organizations
