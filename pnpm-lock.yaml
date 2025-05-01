@@ -384,8 +384,8 @@ importers:
         specifier: ^4.6.15
         version: 4.6.15
       hono-openapi:
-        specifier: ^0.3.1
-        version: 0.3.1(typescript@5.7.2)
+        specifier: ^0.4.8
+        version: 0.4.8(@hono/arktype-validator@2.0.0(hono@4.6.15))(@hono/effect-validator@1.2.0(effect@3.12.0)(hono@4.6.15))(@hono/typebox-validator@0.2.6(@sinclair/typebox@0.34.13)(hono@4.6.15))(@hono/valibot-validator@0.5.1(hono@4.6.15)(valibot@1.0.0-beta.9(typescript@5.7.2)))(@hono/zod-validator@0.4.1(hono@4.6.15)(zod@3.24.1))(@sinclair/typebox@0.34.13)(@valibot/to-json-schema@1.0.0-beta.3(valibot@1.0.0-beta.9(typescript@5.7.2)))(effect@3.12.0)(hono@4.6.15)(openapi-types@12.1.3)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod-openapi@4.2.2(zod@3.24.1))(zod@3.24.1)
       nanoid:
         specifier: ^5.0.9
         version: 5.0.9
@@ -804,15 +804,9 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@apidevtools/json-schema-ref-parser@11.7.3':
-    resolution: {integrity: sha512-WApSdLdXEBb/1FUPca2lteASewEfpjEYJ8oXZP+0gExK5qSfsEKBKcA+WjY6Q4wvXwyv0+W6Kvc372pSceib9w==}
+  '@apidevtools/json-schema-ref-parser@11.9.3':
+    resolution: {integrity: sha512-60vepv88RwcJtSHrD6MjIL6Ta3SOYbgfnkHb+ppAVK+o9mXprRtulx7VlRl3lN3bbvysAfCS7WMVfhUYemB0IQ==}
     engines: {node: '>= 16'}
-
-  '@ark/schema@0.25.0':
-    resolution: {integrity: sha512-1Air2M9Je8C/4+YNhJ1QPkoFbERX3PhulDVNW1RmpOpyUjUSM5lcuuyq357jp3a7+M3a5RV2PNdI1XZ/ah8l8Q==}
-
-  '@ark/util@0.25.0':
-    resolution: {integrity: sha512-yo2Me+tYnmr6E0E3maZzu643/rL07oR25yBHkH24gllssqYcd6EPCvZE23GEKgbk0iac9J73GlJ9pkgZj43Q2g==}
 
   '@aws-crypto/crc32@3.0.0':
     resolution: {integrity: sha512-IzSgsrxUcsrejQbPVilIKy16kAT52EwB6zSaI+M3xxIhKh5+aldEyvI+z6erM7TCLB2BJsFrtHjp6/4/sr+3dA==}
@@ -3578,6 +3572,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   agentkeepalive@4.5.0:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
@@ -3655,9 +3654,6 @@ packages:
   aria-hidden@1.2.4:
     resolution: {integrity: sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==}
     engines: {node: '>=10'}
-
-  arktype@2.0.0-rc.25:
-    resolution: {integrity: sha512-ck1kRLda55Pv6L3vIIjRb6A22LqUcjitxPGS3OscOKwFcxNReaj+ItJJiysebBbbUy+ESouXTJ+vvck33spGDQ==}
 
   array-find-index@1.0.2:
     resolution: {integrity: sha512-M1HQyIXcBGtVywBt8WVdim+lrNaK7VHp99Qt5pSNziXznKHViIBbXWtfRTpEFpF/c4FdfxNAsCCwPp5phBYJtw==}
@@ -4580,8 +4576,50 @@ packages:
   hast-util-whitespace@3.0.0:
     resolution: {integrity: sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==}
 
-  hono-openapi@0.3.1:
-    resolution: {integrity: sha512-8j02qmkE3BJkr+s/tqiauiHy+/OMmM/bvf33G9CZpBRdyM95aVL3fgRj4tNsRdkL+e/rM5+EClozD3jxnwr4eA==}
+  hono-openapi@0.4.8:
+    resolution: {integrity: sha512-LYr5xdtD49M7hEAduV1PftOMzuT8ZNvkyWfh1DThkLsIr4RkvDb12UxgIiFbwrJB6FLtFXLoOZL9x4IeDk2+VA==}
+    peerDependencies:
+      '@hono/arktype-validator': ^2.0.0
+      '@hono/effect-validator': ^1.2.0
+      '@hono/typebox-validator': ^0.2.0 || ^0.3.0
+      '@hono/valibot-validator': ^0.5.1
+      '@hono/zod-validator': ^0.4.1
+      '@sinclair/typebox': ^0.34.9
+      '@valibot/to-json-schema': ^1.0.0-beta.3
+      arktype: ^2.0.0
+      effect: ^3.11.3
+      hono: ^4.6.13
+      openapi-types: ^12.1.3
+      valibot: ^1.0.0-beta.9
+      zod: ^3.23.8
+      zod-openapi: ^4.0.0
+    peerDependenciesMeta:
+      '@hono/arktype-validator':
+        optional: true
+      '@hono/effect-validator':
+        optional: true
+      '@hono/typebox-validator':
+        optional: true
+      '@hono/valibot-validator':
+        optional: true
+      '@hono/zod-validator':
+        optional: true
+      '@sinclair/typebox':
+        optional: true
+      '@valibot/to-json-schema':
+        optional: true
+      arktype:
+        optional: true
+      effect:
+        optional: true
+      hono:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+      zod-openapi:
+        optional: true
 
   hono@4.6.15:
     resolution: {integrity: sha512-OiQwvAOAaI2JrABBH69z5rsctHDzFzIKJge0nYXgtzGJ0KftwLWcBXm1upJC23/omNRtnqM0gjRMbtXshPdqhQ==}
@@ -4923,6 +4961,7 @@ packages:
 
   lodash.template@4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
+    deprecated: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
 
   lodash.templatesettings@4.2.0:
     resolution: {integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==}
@@ -5320,6 +5359,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -5430,6 +5470,7 @@ packages:
 
   oslo@1.2.1:
     resolution: {integrity: sha512-HfIhB5ruTdQv0XX2XlncWQiJ5SIHZ7NHZhVyHth0CSZ/xzge00etRyYy/3wp/Dsu+PkxMC+6+B2lS/GcKoewkA==}
+    deprecated: Package is no longer supported. Please see https://oslojs.dev for the successor project.
 
   ospath@1.2.2:
     resolution: {integrity: sha512-o6E5qJV5zkAbIDNhGSIlyOhScKXgQrSRMilfph0clDfM0nEnBOlKlH4sWDmG95BW/CvwNz0vmm7dJVtU2KlMiA==}
@@ -6589,19 +6630,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@apidevtools/json-schema-ref-parser@11.7.3':
+  '@apidevtools/json-schema-ref-parser@11.9.3':
     dependencies:
       '@jsdevtools/ono': 7.1.3
       '@types/json-schema': 7.0.15
       js-yaml: 4.1.0
-
-  '@ark/schema@0.25.0':
-    dependencies:
-      '@ark/util': 0.25.0
-    optional: true
-
-  '@ark/util@0.25.0':
-    optional: true
 
   '@aws-crypto/crc32@3.0.0':
     dependencies:
@@ -7989,9 +8022,8 @@ snapshots:
 
   '@hexagon/base64@1.1.28': {}
 
-  '@hono/arktype-validator@2.0.0(arktype@2.0.0-rc.25)(hono@4.6.15)':
+  '@hono/arktype-validator@2.0.0(hono@4.6.15)':
     dependencies:
-      arktype: 2.0.0-rc.25
       hono: 4.6.15
     optional: true
 
@@ -9987,10 +10019,13 @@ snapshots:
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
     optional: true
 
   acorn@8.14.0: {}
+
+  acorn@8.14.1:
+    optional: true
 
   agentkeepalive@4.5.0:
     dependencies:
@@ -10059,12 +10094,6 @@ snapshots:
   aria-hidden@1.2.4:
     dependencies:
       tslib: 2.8.1
-
-  arktype@2.0.0-rc.25:
-    dependencies:
-      '@ark/schema': 0.25.0
-      '@ark/util': 0.25.0
-    optional: true
 
   array-find-index@1.0.2: {}
 
@@ -11179,26 +11208,23 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
 
-  hono-openapi@0.3.1(typescript@5.7.2):
+  hono-openapi@0.4.8(@hono/arktype-validator@2.0.0(hono@4.6.15))(@hono/effect-validator@1.2.0(effect@3.12.0)(hono@4.6.15))(@hono/typebox-validator@0.2.6(@sinclair/typebox@0.34.13)(hono@4.6.15))(@hono/valibot-validator@0.5.1(hono@4.6.15)(valibot@1.0.0-beta.9(typescript@5.7.2)))(@hono/zod-validator@0.4.1(hono@4.6.15)(zod@3.24.1))(@sinclair/typebox@0.34.13)(@valibot/to-json-schema@1.0.0-beta.3(valibot@1.0.0-beta.9(typescript@5.7.2)))(effect@3.12.0)(hono@4.6.15)(openapi-types@12.1.3)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod-openapi@4.2.2(zod@3.24.1))(zod@3.24.1):
     dependencies:
       json-schema-walker: 2.0.0
+      openapi-types: 12.1.3
     optionalDependencies:
-      '@hono/arktype-validator': 2.0.0(arktype@2.0.0-rc.25)(hono@4.6.15)
+      '@hono/arktype-validator': 2.0.0(hono@4.6.15)
       '@hono/effect-validator': 1.2.0(effect@3.12.0)(hono@4.6.15)
       '@hono/typebox-validator': 0.2.6(@sinclair/typebox@0.34.13)(hono@4.6.15)
       '@hono/valibot-validator': 0.5.1(hono@4.6.15)(valibot@1.0.0-beta.9(typescript@5.7.2))
       '@hono/zod-validator': 0.4.1(hono@4.6.15)(zod@3.24.1)
       '@sinclair/typebox': 0.34.13
       '@valibot/to-json-schema': 1.0.0-beta.3(valibot@1.0.0-beta.9(typescript@5.7.2))
-      arktype: 2.0.0-rc.25
       effect: 3.12.0
       hono: 4.6.15
-      openapi-types: 12.1.3
       valibot: 1.0.0-beta.9(typescript@5.7.2)
       zod: 3.24.1
       zod-openapi: 4.2.2(zod@3.24.1)
-    transitivePeerDependencies:
-      - typescript
 
   hono@4.6.15: {}
 
@@ -11400,7 +11426,7 @@ snapshots:
 
   json-schema-walker@2.0.0:
     dependencies:
-      '@apidevtools/json-schema-ref-parser': 11.7.3
+      '@apidevtools/json-schema-ref-parser': 11.9.3
       clone: 2.1.2
 
   json-schema@0.4.0: {}
@@ -12279,8 +12305,7 @@ snapshots:
       lodash: 4.17.21
       ts-is-present: 1.2.2
 
-  openapi-types@12.1.3:
-    optional: true
+  openapi-types@12.1.3: {}
 
   ora@5.4.1:
     dependencies:
@@ -13227,7 +13252,7 @@ snapshots:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 22.10.5
-      acorn: 8.14.0
+      acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
       create-require: 1.1.1
